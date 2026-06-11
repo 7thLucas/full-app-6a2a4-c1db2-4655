@@ -34,8 +34,8 @@ no single place that shows which relationships are going cold. The cost is not m
 3. **Interaction log** — timestamped **calls, emails, notes, and meetings** recorded
    against each contact; logging an interaction updates that contact's "last touch."
 4. **Pipeline** — a drag-and-drop stage board where each contact/deal moves through:
-   **Lead → Contacted → Proposal → Won / Lost**. Stages are the default and are
-   renamable, addable, and deletable.
+   **Lead → Active → Past**. Stages are the default and are renamable, addable, and
+   deletable.
 
 The pieces are linked: an interaction updates last-touch, which feeds the cold/cooling/
 fresh states on the Today view, and the pipeline always reflects current reality. The
