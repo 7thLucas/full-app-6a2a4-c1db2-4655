@@ -1,53 +1,67 @@
 <style>
   .mode-landscape .sl-cards { grid-template-columns: repeat(3, minmax(0,1fr)); }
   .mode-portrait .sl-cards { grid-template-columns: repeat(1, minmax(0,1fr)); }
+  .mode-landscape .sl-hero { flex-direction: row; align-items: center; }
+  .mode-portrait .sl-hero { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
 </style>
 <section class="w-full h-full overflow-auto bg-white">
   <div class="w-full h-full flex flex-col p-12">
-    <div class="flex items-end justify-between">
-      <div>
-        <span class="text-sm font-semibold tracking-widest uppercase" style="color:#4f46e5">Core Features</span>
-        <h2 class="mt-2 text-4xl font-extrabold text-slate-900">Everything one operator needs</h2>
-      </div>
+    <div>
+      <span class="text-sm font-semibold tracking-widest uppercase" style="color:#4f46e5">Core Features</span>
+      <h2 class="mt-2 text-4xl font-extrabold text-slate-900">Everything one operator needs</h2>
     </div>
 
     <!-- Persona chips -->
-    <div class="mt-6 flex flex-wrap gap-3">
+    <div class="mt-5 flex flex-wrap gap-3">
       <span class="px-4 py-1.5 rounded-full text-sm font-semibold text-white" style="background:#4f46e5">The Solo Operator</span>
       <span class="px-4 py-1.5 rounded-full text-sm font-medium text-slate-500 border border-slate-200">Freelancer</span>
       <span class="px-4 py-1.5 rounded-full text-sm font-medium text-slate-500 border border-slate-200">Consultant</span>
       <span class="px-4 py-1.5 rounded-full text-sm font-medium text-slate-500 border border-slate-200">Salesperson</span>
     </div>
 
+    <!-- Hero feature: Today dashboard -->
+    <div class="mt-6 rounded-2xl p-6 flex sl-hero gap-5" style="background:#1e1b4b">
+      <div class="flex-1">
+        <p class="text-xs font-semibold tracking-widest uppercase text-indigo-300">Starts here · Today</p>
+        <h3 class="mt-1 text-2xl font-bold text-white">The cold ones, impossible to miss</h3>
+        <p class="mt-2 text-indigo-100 leading-relaxed text-sm">
+          Your home view opens on exactly who's gone quiet or was never touched — so the
+          next follow-up is obvious before you've had your coffee.
+        </p>
+      </div>
+      <div class="flex gap-3">
+        <span class="px-4 py-2 rounded-xl text-sm font-bold text-white" style="background:#ef4444">Cold</span>
+        <span class="px-4 py-2 rounded-xl text-sm font-bold text-slate-900" style="background:#f59e0b">Cooling</span>
+        <span class="px-4 py-2 rounded-xl text-sm font-bold text-white" style="background:#22c55e">Fresh</span>
+      </div>
+    </div>
+
     <!-- Feature grid -->
-    <div class="mt-8 grid gap-6 sl-cards flex-1">
-      <div class="rounded-2xl p-7 border border-slate-200 flex flex-col">
-        <div class="w-11 h-11 rounded-xl flex items-center justify-center text-white text-xl font-bold" style="background:#4f46e5">1</div>
-        <h3 class="mt-4 text-xl font-bold text-slate-900">Contacts</h3>
-        <p class="mt-2 text-slate-600 leading-relaxed">
-          Every person with name, company, and an automatically maintained
-          <span class="font-semibold text-slate-800">"last touch"</span> date — so you
-          always know who you've spoken to and when.
+    <div class="mt-5 grid gap-5 sl-cards flex-1">
+      <div class="rounded-2xl p-6 border border-slate-200 flex flex-col">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center text-white text-lg font-bold" style="background:#4f46e5">1</div>
+        <h3 class="mt-3 text-lg font-bold text-slate-900">Contacts</h3>
+        <p class="mt-1.5 text-slate-600 leading-relaxed text-sm">
+          Searchable and sorted <span class="font-semibold text-slate-800">coldest-first</span>,
+          each with company, last-touch, and a full timeline.
         </p>
       </div>
 
-      <div class="rounded-2xl p-7 border border-slate-200 flex flex-col">
-        <div class="w-11 h-11 rounded-xl flex items-center justify-center text-white text-xl font-bold" style="background:#4f46e5">2</div>
-        <h3 class="mt-4 text-xl font-bold text-slate-900">Interaction Log</h3>
-        <p class="mt-2 text-slate-600 leading-relaxed">
-          Timestamped calls, emails, and notes recorded against each contact. Logging an
-          interaction <span class="font-semibold text-slate-800">updates last touch</span>
-          automatically.
+      <div class="rounded-2xl p-6 border border-slate-200 flex flex-col">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center text-white text-lg font-bold" style="background:#4f46e5">2</div>
+        <h3 class="mt-3 text-lg font-bold text-slate-900">Interaction Log</h3>
+        <p class="mt-1.5 text-slate-600 leading-relaxed text-sm">
+          <span class="font-semibold text-slate-800">Calls, emails, notes, meetings</span> —
+          timestamped per contact, auto-updating last touch.
         </p>
       </div>
 
-      <div class="rounded-2xl p-7 border border-slate-200 flex flex-col">
-        <div class="w-11 h-11 rounded-xl flex items-center justify-center text-white text-xl font-bold" style="background:#4f46e5">3</div>
-        <h3 class="mt-4 text-xl font-bold text-slate-900">Pipeline</h3>
-        <p class="mt-2 text-slate-600 leading-relaxed">
-          A stage board — <span class="font-semibold text-slate-800">Lead → Contacted →
-          Proposal → Won / Lost</span> — that always reflects reality. Stages are
-          renamable to fit how you sell.
+      <div class="rounded-2xl p-6 border border-slate-200 flex flex-col">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center text-white text-lg font-bold" style="background:#4f46e5">3</div>
+        <h3 class="mt-3 text-lg font-bold text-slate-900">Pipeline</h3>
+        <p class="mt-1.5 text-slate-600 leading-relaxed text-sm">
+          Drag-and-drop board — <span class="font-semibold text-slate-800">Lead → Contacted →
+          Proposal → Won / Lost</span>. Rename, add, or delete stages.
         </p>
       </div>
     </div>
