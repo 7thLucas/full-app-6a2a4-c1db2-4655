@@ -1,0 +1,40 @@
+<style>
+  .mode-landscape .sl-grid { flex-direction: row; }
+  .mode-portrait .sl-grid { flex-direction: column; }
+  .mode-portrait .sl-visual { min-height: 220px; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex sl-grid">
+    <!-- Left: editorial headline + tagline + attribution -->
+    <div class="flex-1 flex flex-col justify-between p-12">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2.5 h-2.5 rounded-full" style="background:#4f46e5"></span>
+        <span class="text-sm font-semibold tracking-widest uppercase" style="color:#4f46e5">Pipeline</span>
+      </div>
+
+      <div>
+        <h1 class="font-extrabold text-slate-900 leading-[1.05]" style="font-size:3.4rem">
+          Stop losing<br/>deals to<br/><span style="color:#4f46e5">forgotten</span> follow-ups.
+        </h1>
+        <p class="mt-6 text-xl text-slate-600 max-w-md leading-relaxed">
+          A simple, personal CRM that keeps every contact, every interaction, and your
+          whole pipeline in one calm view.
+        </p>
+      </div>
+
+      <div class="mt-8">
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: visual anchor -->
+    <div class="flex-1 relative sl-visual overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=calm%20premium%20editorial%20illustration%20of%20a%20single%20founder%20at%20a%20clean%20desk%20managing%20customer%20relationships%2C%20soft%20indigo%20and%20violet%20palette%2C%20minimal%2C%20warm%20natural%20light"
+        alt="A focused operator managing their relationships"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <div class="absolute inset-0" style="background:linear-gradient(120deg, rgba(79,70,229,0.10), rgba(255,255,255,0))"></div>
+    </div>
+  </div>
+</section>
