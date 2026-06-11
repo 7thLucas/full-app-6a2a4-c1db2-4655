@@ -1,0 +1,50 @@
+<style>
+  .mode-landscape .sl-metrics { grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .mode-portrait .sl-metrics { grid-template-columns: repeat(1, minmax(0,1fr)); }
+  .mode-landscape .sl-wrap { flex-direction: row; }
+  .mode-portrait .sl-wrap { flex-direction: column; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex flex-col p-12">
+    <span class="text-sm font-semibold tracking-widest uppercase" style="color:#4f46e5">The Payoff</span>
+    <h2 class="mt-2 text-4xl font-extrabold text-slate-900">Fewer cold deals, less mental load</h2>
+
+    <div class="mt-8 flex gap-6 flex-1 sl-wrap">
+      <!-- Metric cards -->
+      <div class="grid gap-5 sl-metrics" style="flex:2">
+        <div class="rounded-2xl p-6 border border-slate-200">
+          <p class="text-xs font-semibold tracking-wide uppercase text-slate-400">Follow-ups</p>
+          <p class="mt-2 text-3xl font-extrabold" style="color:#4f46e5">0 missed</p>
+          <p class="mt-2 text-sm text-slate-600">Cold contacts are surfaced, not forgotten.</p>
+        </div>
+        <div class="rounded-2xl p-6 border border-slate-200">
+          <p class="text-xs font-semibold tracking-wide uppercase text-slate-400">Visibility</p>
+          <p class="mt-2 text-3xl font-extrabold" style="color:#4f46e5">1 view</p>
+          <p class="mt-2 text-sm text-slate-600">Your whole pipeline at a glance, always current.</p>
+        </div>
+        <div class="rounded-2xl p-6 border border-slate-200">
+          <p class="text-xs font-semibold tracking-wide uppercase text-slate-400">Tools replaced</p>
+          <p class="mt-2 text-3xl font-extrabold" style="color:#4f46e5">3 → 1</p>
+          <p class="mt-2 text-sm text-slate-600">Contacts, notes, and pipeline in one place.</p>
+        </div>
+        <div class="rounded-2xl p-6 border border-slate-200">
+          <p class="text-xs font-semibold tracking-wide uppercase text-slate-400">Last touch</p>
+          <p class="mt-2 text-3xl font-extrabold" style="color:#4f46e5">Auto</p>
+          <p class="mt-2 text-sm text-slate-600">Updated every time you log an interaction.</p>
+        </div>
+      </div>
+
+      <!-- ROI summary block -->
+      <div class="rounded-2xl p-8 flex flex-col justify-center" style="flex:1; background:#1e1b4b">
+        <p class="text-xs font-semibold tracking-widest uppercase text-indigo-300">The Bottom Line</p>
+        <p class="mt-3 text-2xl font-bold text-white leading-snug">
+          Revenue stops leaking through the cracks.
+        </p>
+        <p class="mt-4 text-indigo-100 leading-relaxed text-sm">
+          Most operators lose more to forgotten follow-ups than to lost pitches. Recover
+          even a handful of those deals and the tool has paid for itself.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
