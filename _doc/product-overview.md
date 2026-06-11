@@ -48,12 +48,16 @@ quiet and needs a follow-up, so revenue stops leaking through forgotten contacts
 
 ## Scope (current)
 
-- In: contacts, interaction logging, pipeline stages, last-touch surfacing.
+- In (shipped): Today dashboard with cold/cooling/fresh states, contacts (coldest-first,
+  searchable, detail + timeline), interaction logging (call/email/note/meeting),
+  drag-and-drop pipeline with renamable/addable/deletable stages, configurable
+  cold/warm thresholds and default stages.
 - Out (for now): team/multi-user collaboration, email integration/sync, automation,
-  reporting dashboards beyond pipeline view.
+  reminder nudges, win/loss reporting beyond the pipeline view.
 
 ## Open questions
 
 - What the user sells and to whom — this shapes the pipeline stages and the value of a
-  "deal." (Asked; awaiting answer.)
-- Branding: product name, logo, color palette (not yet set).
+  "deal." (Asked; awaiting answer. App ships with sensible defaults until then.)
+- Branding: logo and color palette (name confirmed as **Pipeline**; visual identity not
+  yet set).
