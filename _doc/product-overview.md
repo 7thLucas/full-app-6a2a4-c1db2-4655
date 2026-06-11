@@ -28,9 +28,9 @@ no single place that shows which relationships are going cold. The cost is not m
 1. **Today dashboard** (the hero view) — opens on what matters: contacts that have gone
    cold or were never touched, with **cold / cooling / fresh** counts so the next
    follow-up is obvious at a glance.
-2. **Contacts** — a searchable list, sorted **coldest-first**, with name, company, and an
-   automatically maintained "last touch" date; each contact has a detail page with a
-   quick "log interaction" and a chronological timeline.
+2. **Contacts** — a searchable list, **filterable by stage**, sorted **coldest-first**,
+   with name, company, and an automatically maintained "last touch" date; each contact
+   has a detail page with a quick "log interaction" and a chronological timeline.
 3. **Interaction log** — timestamped **calls, emails, notes, and meetings** recorded
    against each contact; logging an interaction updates that contact's "last touch."
 4. **Pipeline** — a drag-and-drop stage board where each contact/deal moves through:
