@@ -48,10 +48,8 @@ export const defaultConfigurablesData: TDefaultConfigurableData = {
   logInteractionLabel: "Log interaction", // fill it here
   defaultStages: [
     { name: "Lead", color: "#6B7280" },
-    { name: "Contacted", color: "#3B82F6" },
-    { name: "Proposal", color: "#F59E0B" },
-    { name: "Won", color: "#10B981" },
-    { name: "Lost", color: "#EF4444" },
+    { name: "Active", color: "#3B82F6" },
+    { name: "Past", color: "#10B981" },
   ], // fill it here
   // ─────────────────────────────────────────────────────────────────────
   // Add new field defaults here. See RULES.md §5 for per-type shape.

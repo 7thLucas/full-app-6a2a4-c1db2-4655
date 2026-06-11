@@ -4,7 +4,7 @@ import { CommonTypegooseEntity } from "~/api/models/base/common-typegoose.entity
 /**
  * Stage — a single column in the pipeline board.
  * Stages are renamable and reorderable; the seed creates the defaults
- * (Lead → Contacted → Proposal → Won / Lost).
+ * (Lead → Active → Past).
  */
 @modelOptions({
   schemaOptions: {
