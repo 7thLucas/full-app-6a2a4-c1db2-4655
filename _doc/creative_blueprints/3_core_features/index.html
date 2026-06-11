@@ -1,0 +1,55 @@
+<style>
+  .mode-landscape .sl-cards { grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .mode-portrait .sl-cards { grid-template-columns: repeat(1, minmax(0,1fr)); }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex flex-col p-12">
+    <div class="flex items-end justify-between">
+      <div>
+        <span class="text-sm font-semibold tracking-widest uppercase" style="color:#4f46e5">Core Features</span>
+        <h2 class="mt-2 text-4xl font-extrabold text-slate-900">Everything one operator needs</h2>
+      </div>
+    </div>
+
+    <!-- Persona chips -->
+    <div class="mt-6 flex flex-wrap gap-3">
+      <span class="px-4 py-1.5 rounded-full text-sm font-semibold text-white" style="background:#4f46e5">The Solo Operator</span>
+      <span class="px-4 py-1.5 rounded-full text-sm font-medium text-slate-500 border border-slate-200">Freelancer</span>
+      <span class="px-4 py-1.5 rounded-full text-sm font-medium text-slate-500 border border-slate-200">Consultant</span>
+      <span class="px-4 py-1.5 rounded-full text-sm font-medium text-slate-500 border border-slate-200">Salesperson</span>
+    </div>
+
+    <!-- Feature grid -->
+    <div class="mt-8 grid gap-6 sl-cards flex-1">
+      <div class="rounded-2xl p-7 border border-slate-200 flex flex-col">
+        <div class="w-11 h-11 rounded-xl flex items-center justify-center text-white text-xl font-bold" style="background:#4f46e5">1</div>
+        <h3 class="mt-4 text-xl font-bold text-slate-900">Contacts</h3>
+        <p class="mt-2 text-slate-600 leading-relaxed">
+          Every person with name, company, and an automatically maintained
+          <span class="font-semibold text-slate-800">"last touch"</span> date — so you
+          always know who you've spoken to and when.
+        </p>
+      </div>
+
+      <div class="rounded-2xl p-7 border border-slate-200 flex flex-col">
+        <div class="w-11 h-11 rounded-xl flex items-center justify-center text-white text-xl font-bold" style="background:#4f46e5">2</div>
+        <h3 class="mt-4 text-xl font-bold text-slate-900">Interaction Log</h3>
+        <p class="mt-2 text-slate-600 leading-relaxed">
+          Timestamped calls, emails, and notes recorded against each contact. Logging an
+          interaction <span class="font-semibold text-slate-800">updates last touch</span>
+          automatically.
+        </p>
+      </div>
+
+      <div class="rounded-2xl p-7 border border-slate-200 flex flex-col">
+        <div class="w-11 h-11 rounded-xl flex items-center justify-center text-white text-xl font-bold" style="background:#4f46e5">3</div>
+        <h3 class="mt-4 text-xl font-bold text-slate-900">Pipeline</h3>
+        <p class="mt-2 text-slate-600 leading-relaxed">
+          A stage board — <span class="font-semibold text-slate-800">Lead → Contacted →
+          Proposal → Won / Lost</span> — that always reflects reality. Stages are
+          renamable to fit how you sell.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
