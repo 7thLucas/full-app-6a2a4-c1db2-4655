@@ -14,6 +14,7 @@ export default function ContactsRoute() {
   const { stages, contacts, loading, refetch } = useCrmBoard();
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState<SortKey>("cold");
+  const [stageFilter, setStageFilter] = useState<string>("all");
   const [adding, setAdding] = useState(false);
 
   const stageName = useMemo(() => {
@@ -25,7 +26,9 @@ export default function ContactsRoute() {
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     let list = contacts.filter(
-      (c) => !q || c.name.toLowerCase().includes(q) || c.company.toLowerCase().includes(q),
+      (c) =>
+        (stageFilter === "all" || c.stageId === stageFilter) &&
+        (!q || c.name.toLowerCase().includes(q) || c.company.toLowerCase().includes(q)),
     );
     list = [...list].sort((a, b) => {
       if (sort === "name") return a.name.localeCompare(b.name);
@@ -38,7 +41,7 @@ export default function ContactsRoute() {
       return vb - va;
     });
     return list;
-  }, [contacts, query, sort]);
+  }, [contacts, query, sort, stageFilter]);
 
   return (
     <AppShell>
@@ -64,6 +67,19 @@ export default function ContactsRoute() {
             onChange={(e) => setQuery(e.target.value)}
           />
         </div>
+        <select
+          className={inputCls + " w-auto"}
+          value={stageFilter}
+          onChange={(e) => setStageFilter(e.target.value)}
+          aria-label="Filter by stage"
+        >
+          <option value="all">All stages</option>
+          {stages.map((s) => (
+            <option key={s._id} value={s._id}>
+              {s.name}
+            </option>
+          ))}
+        </select>
         <div className="flex items-center gap-1 rounded-lg border border-zinc-200 bg-white p-0.5">
           <ArrowUpDown className="ml-2 h-3.5 w-3.5 text-zinc-400" />
           {(["cold", "name", "company"] as SortKey[]).map((k) => (
