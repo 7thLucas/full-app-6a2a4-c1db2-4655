@@ -1,16 +1,15 @@
 # Product Overview
 
-> Single source of truth for this product. Branding (name, logo, colors) is not yet
-> finalized; working title used below. Update when product facts change.
+> Single source of truth for this product. Name is confirmed (**Pipeline**); logo and
+> color palette are not yet finalized. Status: **built and shipped** (initial MVP).
+> Update when product facts change.
 
 ## What it is
 
-A simple, personal **CRM** for tracking contacts, logging every interaction, and seeing
-an at-a-glance sales pipeline. Built for an individual operator (solo founder,
-freelancer, consultant, or salesperson) who manages relationships and deals themselves
-and does not want the weight of an enterprise CRM.
-
-Working title: **Pipeline** (placeholder until branding is set).
+**Pipeline** — a simple, personal **CRM** for tracking contacts, logging every
+interaction, and seeing an at-a-glance sales pipeline. Built for an individual operator
+(solo founder, freelancer, consultant, or salesperson) who manages relationships and
+deals themselves and does not want the weight of an enterprise CRM.
 
 ## Who it's for
 
